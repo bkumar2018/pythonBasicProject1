@@ -117,6 +117,8 @@ for k , v in dict1.items():
     print(k,v)
 
 
+for key,value in dict1.items():
+        print (key,value)
 
 
 
