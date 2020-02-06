@@ -1,11 +1,11 @@
 
 from sql_db_operation import *
 
-sever_name = "DESKTOP-1HT4T1P" # "local" if local is used then it take quite a long time to process connection to db
+sever_name = "*******" # "local" if local is used then it take quite a long time to process connection to db
 
 database = "sampledb"
 username = 'sa'
-password = 'root123'
+password = '********'
 
 #connect_db(sever_name, database, username, password)
 query1 = 'select * from tblGender'
