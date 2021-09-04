@@ -1,0 +1,112 @@
+Django :
+---------
+
+
+python --version
+pip --version
+
+django-admin -- > command to check if django is installed or not.
+
+django-admin --version
+////////////////////////////////////
+
+For multiple project, create isolated space for each project.
+This is done by installing using virtualenvwrapper 
+
+#pip install virtualenvwrapper-win
+
+1. C:\Users\Datantar> workon   --> This command retrun the total number of virtual env you have in yous system.
+2. Now create a env:
+C:\Users\Datantar>mkvirtualenv test
+(test) C:\Users\Datantar>
+(test) C:\Users\Datantar>pip list
+Package    Version
+---------- -------
+pip        21.2.3
+setuptools 57.4.0
+wheel      0.37.0
+
+Installed django now in this env:
+
+(test) C:\Users\Datantar>pip install django
+(test) C:\Users\Datantar>django-admin --version
+3.2.6
+
+
+(test) C:\Users\Datantar>cd D:\Automation\Projects
+(test) D:\Automation\Projects>django-admin startproject testdjangoproject1
+
+Goto directory 'D:\Automation\Projects\testdjangoproject1' and check all file and folder here.
+- django give lightweight server.
+= command to start the django web-server : python manage.py runserver
+
+
+(test) D:\Automation\Projects>cd testdjangoproject1
+(test) D:\Automation\Projects\testdjangoproject1>
+(test) D:\Automation\Projects\testdjangoproject1>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 28, 2021 - 10:02:43
+Django version 3.2.6, using settings 'testdjangoproject1.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+
+
+Command to switch to work project environment.
+$ workon test
+
+
+create a app :
+
+Command to create new 'calc'  apps in the project:
+$ python manage.py startapp calc
+
+
+////
+MVT:
+
+M  - Model i.e data
+
+
+V - View 
+
+
+T - Templates
+DTL - Django Template Language
+
+
+MVT Framework:
+------------------
+										-   Model  -   Database
+Users ---> Django --> Urls --- View 
+										-	Template
+										
+										
+Downloads templates as per your requirements:
+
+For static files:
+-------------------
+settings.py
+	STATIC_URL = '/static/'
+	STATICFILES_DIRS = [
+		os.path.join(BASE_DIR, 'static')
+	]
+	STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+	
+	
+	
+	index.html:
+	
+	load static
+	{% load static %}
+	for all href changes static path csss etc with jinja brackets
+	href = "{% static 'styles/bootstrap4/bootstrap.min.css' %}"
+	
+	
