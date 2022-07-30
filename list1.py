@@ -4,7 +4,5 @@
 list=[12,34,56,78,90]
 
 for r in list:
-	print r 
+	print(r)
 
-
-	
