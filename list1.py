@@ -57,3 +57,15 @@ print(x[0][1])  #b
 
 #Get 1st of list and then get 2nd element from that 1st list.
 print(x[1][2])  #3
+
+print('Range function')
+#The range() function
+for i in range(5):
+	print(i)
+
+a = ['Mary', 'had', 'a', 'little', 'cat']
+for i in range(len(a)):
+	print(i, a[i])
+
+
+
