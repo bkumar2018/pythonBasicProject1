@@ -49,7 +49,7 @@ b=[1, 2, 3]
 
 #list of list items
 x=[a,b]
-<<<<<<< HEAD
+
 print(x)
 
 #Get 0th of list and then get 1st element from that 0th list.
@@ -57,12 +57,3 @@ print(x[0][1])  #b
 
 #Get 1st of list and then get 2nd element from that 1st list.
 print(x[1][2])  #3
-=======
-print(x[0][1])
-
-
-list2= [10,45,67,89,09,34,12]
-for x in list2:
-	print(x)
-
->>>>>>> 8738d173d5b263e0b9959f4f2f965a35c7d879cc
